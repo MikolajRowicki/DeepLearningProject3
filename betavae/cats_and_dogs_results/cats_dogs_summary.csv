@@ -1,0 +1,2 @@
+dataset,beta,d,lr,mean_fid,std_fid,best_single_fid
+cats_and_dogs,1.0,32,0.001,2.1124964555104575,0.014344648020301694,2.0936760902404785
