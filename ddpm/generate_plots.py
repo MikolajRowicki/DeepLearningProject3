@@ -84,7 +84,7 @@ def plot_fid_barchart(histories):
     ax.bar(x, means, yerr=stds, capsize=5, color=colors, edgecolor="white", width=0.6)
     ax.set_xticks(x)
     ax.set_xticklabels(names, fontsize=8)
-    ax.set_ylabel("FID (lower is better)")
+    ax.set_ylabel("FID ")
     ax.set_title("FID Scores Across All Configurations")
     ax.set_ylim(bottom=0)
 
@@ -611,6 +611,72 @@ def plot_catsdogs_samples_comparison():
     print("  Saved catsdogs_samples_comparison.png")
 
 
+def plot_cross_architecture_comparison():
+    models = ["Tiny DDPM", "DCGAN", "β-VAE"]
+ 
+    cats_means = [81.64, 101.03, 252.50]
+    cats_stds  = [8.50,    5.25,    0] 
+ 
+    dogs_means = [65.70,  85.03, 235.99]
+    dogs_stds  = [1.90,    1.49,    0]
+ 
+    x     = np.arange(len(models))
+    width = 0.35
+    colors_cats = "#4c72b0"
+    colors_dogs = "#dd8452"
+ 
+    fig, ax = plt.subplots(figsize=(9, 5))
+ 
+    bars_cats = ax.bar(x - width / 2, cats_means, width,
+                       yerr=cats_stds, capsize=5,
+                       color=colors_cats, edgecolor="white", label="Cats Only")
+    bars_dogs = ax.bar(x + width / 2, dogs_means, width,
+                       yerr=dogs_stds, capsize=5,
+                       color=colors_dogs, edgecolor="white", label="Cats + Dogs")
+ 
+    # value labels above each bar
+    for bars, means, stds in [(bars_cats, cats_means, cats_stds),
+                               (bars_dogs, dogs_means, dogs_stds)]:
+        for bar, m, s in zip(bars, means, stds):
+            ax.text(bar.get_x() + bar.get_width() / 2,
+                    m + s + max(2, ax.get_ylim()[1] * 0.005),
+                    f"{m:.1f}", ha="center", va="bottom", fontsize=8, fontweight="bold")
+ 
+    ax.set_xticks(x)
+    ax.set_xticklabels(models, fontsize=12)
+    ax.set_ylabel("FID")
+    ax.set_title("Cross-Architecture FID Comparison")
+    ax.set_ylim(bottom=0)
+    ax.legend()
+
+    fig.tight_layout()
+    fig.savefig(f"{PLOT_DIR}/cross_architecture_comparison.png", **SAVEFIG_KW)
+    plt.close(fig)
+    print("  Saved cross_architecture_comparison.png")
+def plot_best_samples_grid():
+    base = f"ddpm_{BEST}/seed_42"
+    if not os.path.isdir(base):
+        print("  [SKIP] best_samples_grid: directory not found")
+        return
+    samples = sorted([f for f in os.listdir(base)
+                      if f.startswith("samples_epoch_") and f.endswith(".png")])
+    if not samples:
+        print("  [SKIP] best_samples_grid: no sample files")
+        return
+    img = _crop_whitespace(Image.open(f"{base}/{samples[-1]}"))
+    fig, ax = plt.subplots(figsize=(8, 8))
+    ax.imshow(img)
+    ax.axis("off")
+    ax.set_title(f"Best Configuration: {BEST}  (final epoch, seed=42)",
+                 fontsize=12, pad=6)
+    fig.savefig(f"{PLOT_DIR}/best_samples_grid.png", **SAVEFIG_KW)
+    plt.close(fig)
+    print("  Saved best_samples_grid.png")
+ 
+ 
+
+
+
 
 # ── Main ──────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
@@ -633,5 +699,7 @@ if __name__ == "__main__":
     plot_style_transfer_gallery()
     plot_best_samples_grid()
     plot_catsdogs_samples_comparison()
+    plot_cross_architecture_comparison()
+
 
     print(f"\nDone - all plots saved to '{PLOT_DIR}/'")
