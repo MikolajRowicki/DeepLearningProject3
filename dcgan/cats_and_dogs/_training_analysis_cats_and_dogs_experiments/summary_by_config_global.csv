@@ -1,0 +1,2 @@
+config,config_label_full,lr,z,bs,n_seeds,seeds,fid_mean,fid_std,fid_min,fid_max,source_folders,best_seed,best_epoch,best_seed_fid,best_source_folder,best_source_file,config_display_label,seed_42_fid,seed_142_fid,seed_242_fid,fid_mean_std,seed_fids,seed_header
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,3,"42, 142, 242",85.02666666666666,1.4875931343392699,83.36,86.22,.,242,236,83.36,.,training (7).log,"LR=0.001, z=64, batch size=32",85.5,86.22,83.36,85.03 ± 1.49,85.50 / 86.22 / 83.36,42 / 142 / 242

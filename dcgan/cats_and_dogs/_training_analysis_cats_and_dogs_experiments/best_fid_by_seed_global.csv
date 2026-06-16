@@ -1,0 +1,4 @@
+config,config_label_full,lr,z,bs,seed,best_epoch,best_fid,timestamp,source_folder,source_file,line_no,best_source,run_id_raw,run_id,lr_raw,config_display_label
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,42,273,85.5,2026-06-16 02:05:37.384,.,training.log,312,minimum epoch FID,,,,"LR=0.001, z=64, batch size=32"
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,142,187,86.22,2026-06-16 01:05:23.212,.,training (6).log,228,minimum epoch FID,,,,"LR=0.001, z=64, batch size=32"
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,242,236,83.36,2026-06-16 05:35:14.732,.,training (7).log,291,minimum epoch FID,,,,"LR=0.001, z=64, batch size=32"

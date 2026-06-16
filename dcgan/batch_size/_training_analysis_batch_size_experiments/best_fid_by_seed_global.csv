@@ -1,0 +1,10 @@
+config,config_label_full,lr,z,bs,seed,best_epoch,best_fid,timestamp,source_folder,source_file,line_no,best_source,run_id_raw,run_id,lr_raw,config_display_label
+lr=0.001_z=64_bs=128,"LR=0.001, z=64, batch size=128",0.001,64,128,42,70,144.21,2026-06-13 08:34:44.098,128,128\training (3).log,99,minimum epoch FID,,,,batch size=128
+lr=0.001_z=64_bs=128,"LR=0.001, z=64, batch size=128",0.001,64,128,142,73,138.18,2026-06-13 10:19:08.701,128,128\training (3).log,231,minimum epoch FID,,,,batch size=128
+lr=0.001_z=64_bs=128,"LR=0.001, z=64, batch size=128",0.001,64,128,242,84,136.95,2026-06-13 12:10:21.457,128,128\training (3).log,376,minimum epoch FID,,,,batch size=128
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,42,77,108.56,2026-06-13 09:52:21.934,32,32\training.log,110,minimum epoch FID,,,,batch size=32
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,142,72,112.33,2026-06-13 12:41:38.399,32,32\training.log,236,minimum epoch FID,,,,batch size=32
+lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",0.001,64,32,242,94,110.71,2026-06-13 16:14:50.137,32,32\training.log,392,minimum epoch FID,,,,batch size=32
+lr=0.001_z=64_bs=64,"LR=0.001, z=64, batch size=64",0.001,64,64,42,79,125.95,2026-06-05 15:40:58.070,64,64\training.log,109,minimum epoch FID,,,,batch size=64
+lr=0.001_z=64_bs=64,"LR=0.001, z=64, batch size=64",0.001,64,64,142,99,113.85,2026-06-05 18:47:46.358,64,64\training.log,265,minimum epoch FID,,,,batch size=64
+lr=0.001_z=64_bs=64,"LR=0.001, z=64, batch size=64",0.001,64,64,242,99,130.06,2026-06-05 21:19:58.520,64,64\training.log,399,minimum epoch FID,,,,batch size=64

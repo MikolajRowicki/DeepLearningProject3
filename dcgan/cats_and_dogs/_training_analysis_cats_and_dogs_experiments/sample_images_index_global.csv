@@ -1,0 +1,4 @@
+run_id_raw,run_id,lr_raw,lr,z,bs,seed,config,config_label_full,image_epoch,image_path,image_folder
+lr=0.001_z=64_bs=32_seed=142,lr=0.001_z=64_bs=32_seed=142,0.001,0.001,64,32,142,lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",260,samples_lr=0.001_z=64_bs=32_seed=142_epoch=260.png,.
+lr=0.001_z=64_bs=32_seed=242,lr=0.001_z=64_bs=32_seed=242,0.001,0.001,64,32,242,lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",236,samples_lr=0.001_z=64_bs=32_seed=242_epoch=236.png,.
+lr=0.001_z=64_bs=32_seed=42,lr=0.001_z=64_bs=32_seed=42,0.001,0.001,64,32,42,lr=0.001_z=64_bs=32,"LR=0.001, z=64, batch size=32",273,samples_lr=0.001_z=64_bs=32_seed=42_epoch=273.png,.

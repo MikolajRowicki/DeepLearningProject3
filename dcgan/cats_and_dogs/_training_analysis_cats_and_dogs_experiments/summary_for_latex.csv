@@ -1,0 +1,2 @@
+config_display_label,fid_mean_std,seed_header,seed_fids,fid_mean,fid_std,best_seed,best_epoch,best_seed_fid,seed_42_fid,seed_142_fid,seed_242_fid
+"LR=0.001, z=64, batch size=32",85.03 ± 1.49,42 / 142 / 242,85.50 / 86.22 / 83.36,85.02666666666666,1.4875931343392699,242,236,83.36,85.5,86.22,83.36

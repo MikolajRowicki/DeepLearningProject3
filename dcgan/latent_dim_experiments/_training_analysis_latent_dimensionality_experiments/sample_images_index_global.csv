@@ -1,0 +1,10 @@
+run_id_raw,run_id,lr_raw,lr,z,bs,seed,config,config_label_full,image_epoch,image_path,image_folder
+lr=0.001_z=100_bs=64_seed=142,lr=0.001_z=100_bs=64_seed=142,0.001,0.001,100,64,142,lr=0.001_z=100_bs=64,"LR=0.001, z=100, batch size=64",97,100\samples_lr=0.001_z=100_bs=64_seed=142_epoch=97.png,100
+lr=0.001_z=100_bs=64_seed=242,lr=0.001_z=100_bs=64_seed=242,0.001,0.001,100,64,242,lr=0.001_z=100_bs=64,"LR=0.001, z=100, batch size=64",97,100\samples_lr=0.001_z=100_bs=64_seed=242_epoch=97.png,100
+lr=0.001_z=100_bs=64_seed=42,lr=0.001_z=100_bs=64_seed=42,0.001,0.001,100,64,42,lr=0.001_z=100_bs=64,"LR=0.001, z=100, batch size=64",98,100\samples_lr=0.001_z=100_bs=64_seed=42_epoch=98.png,100
+lr=0.001_z=256_bs=64_seed=142,lr=0.001_z=256_bs=64_seed=142,0.001,0.001,256,64,142,lr=0.001_z=256_bs=64,"LR=0.001, z=256, batch size=64",87,256\samples_lr=0.001_z=256_bs=64_seed=142_epoch=87.png,256
+lr=0.001_z=256_bs=64_seed=242,lr=0.001_z=256_bs=64_seed=242,0.001,0.001,256,64,242,lr=0.001_z=256_bs=64,"LR=0.001, z=256, batch size=64",75,256\samples_lr=0.001_z=256_bs=64_seed=242_epoch=75.png,256
+lr=0.001_z=256_bs=64_seed=42,lr=0.001_z=256_bs=64_seed=42,0.001,0.001,256,64,42,lr=0.001_z=256_bs=64,"LR=0.001, z=256, batch size=64",67,256\samples_lr=0.001_z=256_bs=64_seed=42_epoch=67.png,256
+lr=0.001_z=64_bs=64_seed=142,lr=0.001_z=64_bs=64_seed=142,0.001,0.001,64,64,142,lr=0.001_z=64_bs=64,"LR=0.001, z=64, batch size=64",99,64\samples_lr=0.001_z=64_bs=64_seed=142_epoch=99.png,64
+lr=0.001_z=64_bs=64_seed=242,lr=0.001_z=64_bs=64_seed=242,0.001,0.001,64,64,242,lr=0.001_z=64_bs=64,"LR=0.001, z=64, batch size=64",99,64\samples_lr=0.001_z=64_bs=64_seed=242_epoch=99.png,64
+lr=0.001_z=64_bs=64_seed=42,lr=0.001_z=64_bs=64_seed=42,0.001,0.001,64,64,42,lr=0.001_z=64_bs=64,"LR=0.001, z=64, batch size=64",79,64\samples_lr=0.001_z=64_bs=64_seed=42_epoch=79.png,64
