@@ -447,11 +447,12 @@ def plot_style_transfer_gallery():
     if not os.path.isdir(d):
         print("  [SKIP] style_transfer directory not found")
         return
-    files = sorted(f for f in os.listdir(d) if f.endswith(".png"))[:9]
+    files = sorted(f for f in os.listdir(d) if f.endswith(".png"))
     if not files:
         return
     _save_gallery_chunks(d, files, "Neural Style Transfer Results (VGG-19)",
                          "style_transfer_gallery", cols=3, rows_per_fig=1)
+
 
 
 # ── Plot 11: Loss smoothed ────────────────────────────────────────────────
